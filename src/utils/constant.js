@@ -2,7 +2,7 @@
 
 export const HomeHeroDecription = {
   left: {
-    HeroHeading: 'We have build. Amazing Course for Rockstars ',
+    HeroHeading: 'We have build amazing Courses for Rockstars 🚀',
     HeroButton: {
       ButtonText: 'Join LMS →',
       ButtonLink: 'https://discord.gg/XWQWQWQ',
