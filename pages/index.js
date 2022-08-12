@@ -67,11 +67,11 @@ export default function Home() {
                   margin="30px 0"
                 >
                   First time in industry a curated{' '}
-                  <Bolder color="#4D4D4D"> fulltime curriculam </Bolder> with{' '}
+                  <Bolder color="#4D4D4D"> fulltime curriculum </Bolder> with{' '}
                   <Bolder color="#4D4D4D"> Live Classes, </Bolder> One on One{' '}
                   <Bolder color="#4D4D4D"> Mentorship, Bounties, </Bolder>{' '}
                   Hackathons and
-                  <Bolder color="#4D4D4D"> Gauranteed Job Assistance </Bolder>
+                  <Bolder color="#4D4D4D"> Guaranteed Job Assistance </Bolder>
                 </Paragraph>
                 <Paragraph color="#808080" margin="12px 0" fontWeight="500">
                   All In One Place !
