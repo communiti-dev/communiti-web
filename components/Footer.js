@@ -7,8 +7,8 @@ import {
 import { Grid } from '@mui/material'
 import Image from "next/image";
 import TwitterIcon from '../assets/twitter.svg'
-import DiscordIcon from '../assets/telegram.svg'
-import TelegramIcon from '../assets/discord_big.svg'
+import TelegramIcon from '../assets/telegram.svg'
+import DiscordIcon from '../assets/discord_big.svg'
 import LinkedinIcon from '../assets/linkedIn.svg.webp'
 
 const Footer = () => {
