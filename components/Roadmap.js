@@ -15,10 +15,13 @@ import Grinding from '../assets/Grinding.svg';
 import Brewing from '../assets/Brewing.svg';
 import Drinking from '../assets/Drinking.svg';
 import Image from 'next/image';
+import { useCurrentWidth } from '../src/hooks/getWidth';
 
 const Roadmap = () => {
   const bo = '1px solid #9DA9FE';
   const br = '36px';
+  const isMobileView = useCurrentWidth() > 768 ? true : false;
+
   return (
     <div>
       <Heading
@@ -42,7 +45,7 @@ const Roadmap = () => {
       {/* now the real magic happens */}
       <div
         style={{
-          marginTop: '60px',
+          margin: '60px 15px 0px 15px',
         }}
       >
         <Grid
@@ -89,7 +92,7 @@ const Roadmap = () => {
               Hand-picking the best talent out there and preparing them for this
               roller coaster ride 🚀
             </Paragraph>
-            <Circle top="-12px" left="12px" backgroundColor="#3e57fe"></Circle>
+            <Circle top="-12px" left="12px" hoverBackgroundColor="#3e57fe"></Circle>
             <DottedCirclular top="-22px" left="2px"></DottedCirclular>
           </MasetrBox>
           <MasetrBox 
@@ -98,7 +101,7 @@ const Roadmap = () => {
             smWidth="80%"
             smMarginRight="30px"
           >
-            <Image src={Harvesting} alt="harvesting" />
+          {isMobileView && <Image src={Harvesting} alt="harvesting" />}
           </MasetrBox>
           <MasetrBox></MasetrBox>
         </Grid>
@@ -108,7 +111,7 @@ const Roadmap = () => {
         >
           <MasetrBox></MasetrBox>
           <MasetrBox padding="30px 60px" borderBottom={bo} marginLeft="32px">
-            <Image src={Roasting} alt="Roasting"/>
+            {isMobileView && <Image src={Roasting} alt="Roasting"/>}
           </MasetrBox>
           <MasetrBox borderBottom={bo}>
             <Heading
@@ -128,7 +131,7 @@ const Roadmap = () => {
               Providing students with a well-paced and tested curriculum to
               enhance their aroma in web3 engineering aptitude and skills
             </Paragraph>
-            <Circle top="-12px" left="12px" backgroundColor="white"></Circle>
+            <Circle top="-12px" left="12px" backgroundColor="white"  hoverBackgroundColor="#3e57fe"></Circle>
             <DottedCirclular top="-22px" left="2px"></DottedCirclular>
           </MasetrBox>
           <MasetrBox
@@ -136,7 +139,7 @@ const Roadmap = () => {
             borderTop={bo}
             borderBottom={bo}
             borderBottomRightRadius={br}
-            borderTopRightRadius={br}
+            borderTopRightRadius={'23px'}
           ></MasetrBox>
         </Grid>
         <Grid
@@ -148,7 +151,7 @@ const Roadmap = () => {
             borderLeft={bo}
             borderBottom={bo}
             borderTopLeftRadius={br}
-            borderBottomLeftRadius={br}
+            borderBottomLeftRadius={'23px'}
           ></MasetrBox>
           <MasetrBox borderBottom={bo}>
             <Heading
@@ -170,7 +173,7 @@ const Roadmap = () => {
               grind their Blockchain skills and bring the best out of our
               Rockstars
             </Paragraph>
-            <Circle top="-12px" left="12px" backgroundColor="white"></Circle>
+            <Circle top="-12px" left="12px" backgroundColor="white" hoverBackgroundColor="#3e57fe"></Circle>
             <DottedCirclular top="-22px" left="2px"></DottedCirclular>
           </MasetrBox>
           <MasetrBox
@@ -179,7 +182,7 @@ const Roadmap = () => {
             smWidth="80%"
             smMarginRight="30px"
           >
-            <Image src={Grinding}  alt="Grinding"/>
+            {isMobileView && <Image src={Grinding}  alt="Grinding"/>}
           </MasetrBox>
           <MasetrBox></MasetrBox>
         </Grid>
@@ -189,7 +192,7 @@ const Roadmap = () => {
         >
           <MasetrBox></MasetrBox>
           <MasetrBox padding="60px 30px">
-            <Image src={Brewing} alt="Brewing" />
+            {isMobileView && <Image src={Brewing} alt="Brewing" />}
           </MasetrBox> 
           <MasetrBox>
             <Heading
@@ -211,7 +214,7 @@ const Roadmap = () => {
               ready for all industry-standard DAOs and web3 Companies including
               the top players in the field
             </Paragraph>
-            <Circle top="-12px" left="12px" backgroundColor="white"></Circle>
+            <Circle top="-12px" left="12px" backgroundColor="white" hoverBackgroundColor="#3e57fe"></Circle>
             <DottedCirclular top="-22px" left="2px"></DottedCirclular>
           </MasetrBox>
           <MasetrBox
@@ -219,7 +222,7 @@ const Roadmap = () => {
             borderTop={bo}
             borderBottom={bo}
             borderBottomRightRadius={br}
-            borderTopRightRadius={br}
+            borderTopRightRadius={'23px'}
           ></MasetrBox>
         </Grid>
         <Grid gridTemplateColumns="1fr 5fr 5fr 1fr">

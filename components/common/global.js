@@ -93,13 +93,15 @@ export const Paragraph = styled.p`
   line-height: ${(props) => props.lineHeight};
   size: ${(props) => props.size};
   text-align: ${(props) => props.textAlign};
-  background-color: ${(props) => props.backgroundColor};
+  background: ${(props) => props.backgroundColor};
+  border-radius: ${(props) => props.borderRadius};
   width: ${(props) => props.width};
   @media (max-width: ${breakPoint}) {
     font-size: ${(props) => props.fontSizeMobile};
     font-weight: ${(props) => props.fontWeightMobile};
     color: ${(props) => props.colorMobile};
     margin: ${(props) => props.marginMobile};
+    padding: ${(props) => props.paddingMobile};
     line-height: ${(props) => props.lineHeightMobile};
     size: ${(props) => props.sizeMobile};
     text-align: center;
@@ -201,6 +203,9 @@ export const Circle = styled.span`
   padding: 10px;
   border-radius: 50%;
   z-index: 3;
+  &:hover {
+    background-color: ${(props) => props.hoverBackgroundColor};
+  }
 `;
 
 export const DottedCirclular = styled.div`

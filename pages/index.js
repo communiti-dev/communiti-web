@@ -42,7 +42,7 @@ export default function Home() {
               alignItems={'center'}
               borderRadius={'33px'}
             >
-              <ResponsiveBox textAlignMobile="center" widthMobile="70%">
+              <ResponsiveBox textAlignMobile="center">
                 <Image src={Features} alt="feature" />
               </ResponsiveBox>
               <ResponsiveBox
