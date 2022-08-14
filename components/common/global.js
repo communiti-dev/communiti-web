@@ -93,7 +93,8 @@ export const Paragraph = styled.p`
   line-height: ${(props) => props.lineHeight};
   size: ${(props) => props.size};
   text-align: ${(props) => props.textAlign};
-  background-color: ${(props) => props.backgroundColor};
+  background: ${(props) => props.backgroundColor};
+  border-radius: ${(props) => props.borderRadius};
   width: ${(props) => props.width};
   @media (max-width: ${breakPoint}) {
     font-size: ${(props) => props.fontSizeMobile};
