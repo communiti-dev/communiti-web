@@ -183,6 +183,12 @@ export const MasetrBox = styled.div`
   border-top-left-radius: ${(props) => props.borderTopLeftRadius};
   border-top-right-radius: ${(props) => props.borderTopRightRadius};
   padding: ${(props) => props.padding};
+  margin-left: ${(props) => props.marginLeft};
+  width: ${(props) => props.width};
+  @media (max-width: 770px) {
+    width: ${(props) => props.smWidth};
+    margin-right: ${(props) => props.smMarginRight};;
+  }
 `;
 export const Circle = styled.span`
   position: absolute;

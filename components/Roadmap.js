@@ -54,6 +54,8 @@ const Roadmap = () => {
             borderRight={bo}
             borderBottom={bo}
             borderBottomRightRadius={br}
+            marginLeft="25px"
+            width="95%"
           ></MasetrBox>
           <MasetrBox height="120px"></MasetrBox>
           <MasetrBox></MasetrBox>
@@ -90,7 +92,12 @@ const Roadmap = () => {
             <Circle top="-12px" left="12px" backgroundColor="#3e57fe"></Circle>
             <DottedCirclular top="-22px" left="2px"></DottedCirclular>
           </MasetrBox>
-          <MasetrBox padding="30px 60px" borderBottom={bo}>
+          <MasetrBox 
+            padding="30px 60px"
+            borderBottom={bo}
+            smWidth="80%"
+            smMarginRight="30px"
+          >
             <Image src={Harvesting} alt="harvesting" />
           </MasetrBox>
           <MasetrBox></MasetrBox>
@@ -100,7 +107,7 @@ const Roadmap = () => {
           gridTemplateColumnsMobile="0fr 0fr 5fr 1fr"
         >
           <MasetrBox></MasetrBox>
-          <MasetrBox padding="30px 60px" borderBottom={bo}>
+          <MasetrBox padding="30px 60px" borderBottom={bo} marginLeft="32px">
             <Image src={Roasting} alt="Roasting"/>
           </MasetrBox>
           <MasetrBox borderBottom={bo}>
@@ -166,7 +173,12 @@ const Roadmap = () => {
             <Circle top="-12px" left="12px" backgroundColor="white"></Circle>
             <DottedCirclular top="-22px" left="2px"></DottedCirclular>
           </MasetrBox>
-          <MasetrBox padding="60px 30px" borderBottom={bo}>
+          <MasetrBox
+            padding="60px 30px"
+            borderBottom={bo}
+            smWidth="80%"
+            smMarginRight="30px"
+          >
             <Image src={Grinding}  alt="Grinding"/>
           </MasetrBox>
           <MasetrBox></MasetrBox>
@@ -221,12 +233,7 @@ const Roadmap = () => {
           <MasetrBox height="120px"></MasetrBox>
         </Grid>
         <div
-          style={{
-            width: '400px',
-            margin: '0px auto',
-            padding: '50px',
-            backgroundColor: 'white',
-          }}
+          className='roadmap-diriking'
         >
           <CenterDiv>
             <Image src={Drinking}  alt="Drinking"/>
