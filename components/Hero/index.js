@@ -17,11 +17,12 @@ const Hero = () => {
         <Paragraph
           fontWeight="500"
           fontSize="19px"
+          fontSizeMobile="16px"
           lineHeight="146%"
           textAlign="center"
           color="#808080"
           margin="10px 50px"
-          marginMobile="10px"
+          marginMobile="25px 10px"
         >
           Mastery based course to learn Blockchain and build DApps from scratch with live classes, assignments, capstone projects and many more with experienced mentorship and devoted curriculum, all at zero cost.
         </Paragraph>
@@ -55,6 +56,7 @@ const Hero = () => {
           textAlign="center"
           color="#808080"
           margin="30px 50px"
+          fontSizeMobile="20px"
           marginMobile="10px"
         >
           # Anyone can start from here, If you&apos;re doing it for fun or want a good job.

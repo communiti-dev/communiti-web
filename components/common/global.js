@@ -101,6 +101,7 @@ export const Paragraph = styled.p`
     font-weight: ${(props) => props.fontWeightMobile};
     color: ${(props) => props.colorMobile};
     margin: ${(props) => props.marginMobile};
+    padding: ${(props) => props.paddingMobile};
     line-height: ${(props) => props.lineHeightMobile};
     size: ${(props) => props.sizeMobile};
     text-align: center;
@@ -202,6 +203,9 @@ export const Circle = styled.span`
   padding: 10px;
   border-radius: 50%;
   z-index: 3;
+  &:hover {
+    background-color: ${(props) => props.hoverBackgroundColor};
+  }
 `;
 
 export const DottedCirclular = styled.div`
