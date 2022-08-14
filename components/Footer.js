@@ -17,7 +17,7 @@ const Footer = () => {
      spacing={0} sx={{background: '#000', minHeight: '250px', marginTop: '5rem'}} >
          <Grid container item xs={12} sm={12} md={10} direction='row' justifyContent='center' alignItems='center'>
              <Grid item xs={12} sm={12} md={3} className="center-sm">
-                <Heading fontWeight="900" fontSize="32px" lineHeight="40px" color="#fff" margin="4px auto">
+                <Heading fontWeight="900" fontSize="32px" lineHeight="40px" color="#fff" margin="4px auto" fontSizeMobile="24px">
                     🌈 Communiti.dev
                 </Heading>
                 <Paragraph fontSize="16px" lineHeight="19px" color='#666' margin="4px 0" padding="10px 4px">
@@ -27,16 +27,16 @@ const Footer = () => {
              <Grid item sm={12} md={6}></Grid>
              <Grid item xs={12} sm={12} md={3} container direction='row' justifyContent='space-around' alignItems='center' >
                 <Anchor href='https://www.linkedin.com/company/communiti-dev' target="_blank">
-                    <Image alt="TwitterIcon" src={LinkedinIcon} height="49px" width="48px" />
+                    <Image alt="TwitterIcon" src={LinkedinIcon} height="40px" width="40px" />
                 </Anchor>
                 <Anchor href='https://twitter.com/0xcommuniti' target="_blank">
-                    <Image alt="TwitterIcon" src={TwitterIcon} />
+                    <Image alt="TwitterIcon" src={TwitterIcon} height="40px" width="40px" />
                 </Anchor>
                 <Anchor href='https://discord.gg/te5etZyd' target="_blank">
-                    <Image alt="DiscordIcon" src={DiscordIcon} />
+                    <Image alt="DiscordIcon" src={DiscordIcon} height="40px" width="40px" />
                 </Anchor>
                 <Anchor href='https://t.me/+jHDcjX55zWw5NzNl' target="_blank">
-                    <Image alt="TelegramIcon" src={TelegramIcon} />
+                    <Image alt="TelegramIcon" src={TelegramIcon} height="40px" width="40px" />
                 </Anchor>
              </Grid>
              <Grid container item xs={12} sm={12} md={12} sx={{background: '#4D4D4D', paddingBottom: '2px', marginTop: '2rem'}}></Grid>
