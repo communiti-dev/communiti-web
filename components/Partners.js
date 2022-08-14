@@ -74,7 +74,7 @@ const Partners = () => {
         <Grid
           container
           item
-          xs={12}
+          xs={8}
           sm={8}
           md={3}
           direction="row"
@@ -98,7 +98,7 @@ const Partners = () => {
         <Grid
           container
           item
-          xs={12}
+          xs={8}
           sm={8}
           md={3}
           direction="row"
