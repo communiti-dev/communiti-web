@@ -168,7 +168,7 @@ export const MasterBox = styled.span`
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: ${(props) => props.gridTemplateColumns};
-  margin-top: -1px;
+  // margin-top: -1px;
   @media (max-width: ${breakPoint}) {
     grid-template-columns: ${(props) => props.gridTemplateColumnsMobile};
   }

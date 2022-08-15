@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Features from '../assets/feature.svg';
-import styles from '../styles/Home.module.css';
 import { Box } from '@mui/material';
 import {
   Heading,
@@ -23,7 +22,7 @@ import Head from 'next/head';
 export default function Home() {
   return (
     <>
-      <div className={styles.container}>
+      <div>
         <Head>
           <title>Communiti | Learn & Build</title>
           <meta
