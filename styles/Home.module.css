@@ -1,7 +1,5 @@
 .container {
   background-image: url('../assets/background.svg');
-  -webkit-transform: translate3d(0,0,1px);
-  -webkit-perspective: 1000;
   image-rendering: pixelated;
   min-width: 100vw;
   min-height: 100vh;
