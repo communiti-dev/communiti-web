@@ -30,7 +30,7 @@ const Hero = () => {
           style={{
             background: 'transparent',
           }}
-          href="https://discord.gg/te5etZyd"
+          href="https://discord.gg/VnKnC9kD4K"
         >
           <CenterDiv>
             <Anchor

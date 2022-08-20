@@ -32,7 +32,7 @@ const Footer = () => {
                 <Anchor href='https://twitter.com/0xcommuniti' target="_blank">
                     <Image alt="TwitterIcon" src={TwitterIcon} height="40px" width="40px" />
                 </Anchor>
-                <Anchor href='https://discord.gg/te5etZyd' target="_blank">
+                <Anchor href='https://discord.gg/VnKnC9kD4K' target="_blank">
                     <Image alt="DiscordIcon" src={DiscordIcon} height="40px" width="40px" />
                 </Anchor>
                 <Anchor href='https://t.me/+jHDcjX55zWw5NzNl' target="_blank">
