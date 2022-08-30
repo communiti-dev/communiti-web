@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import  Header  from '../components/Header';
 import styles from '../styles/Home.module.css';
+import Footer from '../components/Footer';
 
 
 function MyApp({ Component, pageProps }) {
@@ -8,6 +9,7 @@ function MyApp({ Component, pageProps }) {
     <div className={styles.container}>
       <Header />
       <Component {...pageProps} />
+      <Footer />
     </div>
   );
 
