@@ -18,6 +18,7 @@ import Partners from '../components/Partners';
 import { Slider } from '../components/Slider';
 import Footer from '../components/Footer';
 import Head from 'next/head';
+import OurCourses from '../components/OurCourses';
 
 export default function Home() {
   return (
@@ -100,6 +101,7 @@ export default function Home() {
             <Roadmap />
           </Box>
         </Container>
+        {/* <OurCourses /> */}
         <Partners />
         <Slider />
         <Footer />

@@ -49,6 +49,18 @@ a {
   }
 }
 
+.text-ul > a:hover {
+  text-decoration: underline !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.mx-2 {
+  margin: 0 1rem;
+}
+
 .hero_main {
   font-family: 'Gilroy';
   font-style: normal;
@@ -330,4 +342,34 @@ article.nextSlide {
 
 .partner--title, .partner--sub {
   padding: 0px 16px;
+}
+
+
+/* FAQ's Page */
+
+.faq-accordion {
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#panel1d-header > div {
+  border: none !important;
+}
+
+.faq-person-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  border: 4px solid var(--clr-grey-8);
+  box-shadow: var(--dark-shadow);
+}
+
+.faq-person-name {
+  margin-bottom: 0px;
+}
+
+.faq-person-deg {
+  margin-top: 8px;
 }

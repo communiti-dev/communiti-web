@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Container } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import Image from "next/image";
 
@@ -24,23 +24,45 @@ const Header = () => {
         @ zero cost
       </Paragraph>
       <Container maxWidth="xl">
-        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-          <Image loading="lazy" src={Community} width="210px" alt="communiti" />
-          <Link href="/join">
-            <Anchor
-              color="white"
-              height="42px"
-              backgroundColor="#3E57FE"
-              margin="20px"
-              padding="12px 20px"
-              borderRadius="8px"
-              href="https://www.notion.so/Blockchain-Course-3b89152dd1c04a3396207cf5c88803c4"
-              target="_blank"
-            >
-              Courses
-            </Anchor>
-          </Link>
-        </Box>
+        <Grid
+          container
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          spacing={0}
+        >
+            <Grid item xs={12} sm={12} md={3}>
+              <Link href="/">
+                <Image className="cursor-pointer" loading="lazy" src={Community} width="210px" alt="communiti" />
+              </Link>
+            </Grid>
+            <Grid item xs={12} sm={12} md={4}></Grid>
+            <Grid item xs={12} sm={12} md={2} className="text-ul">
+              <Link href="/faq">
+                  FAQs
+              </Link>
+            </Grid>
+            <Grid item xs={12} sm={12} md={1} className="text-ul">
+              <Link href="/team">
+                Our Team
+              </Link>
+            </Grid>
+            <Grid item xs={12} sm={12} md={1}></Grid>
+            <Grid item xs={12} sm={12} md={1}>
+              <Anchor
+                color="white"
+                height="42px"
+                backgroundColor="#3E57FE"
+                margin="20px"
+                padding="12px 20px"
+                borderRadius="8px"
+                href="https://www.notion.so/Blockchain-Course-3b89152dd1c04a3396207cf5c88803c4"
+                target="_blank"
+              >
+                Courses
+              </Anchor>
+            </Grid>
+        </Grid>
       </Container>
     </>
   );
