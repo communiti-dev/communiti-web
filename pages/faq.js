@@ -23,7 +23,7 @@ const Accordion = styled((props) => (
 }));
 
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
-  paddingLeft: theme.spacing(9),
+  paddingLeft: theme.spacing(6),
 }));
 
 export default function CustomizedAccordions() {
@@ -34,7 +34,6 @@ export default function CustomizedAccordions() {
   };
 
   const AccordionSummary = styled((props) => {
-    console.log(props);
 
     return (
       <MuiAccordionSummary
@@ -71,7 +70,7 @@ export default function CustomizedAccordions() {
           </Box>
         </Typography>
       </Grid>
-      <Grid item md={8}>
+      <Grid item md={8} sx={{margin: "0 20px"}}>
         {faqsData.map((item) => (
           <Accordion
             className="faq-accordion"

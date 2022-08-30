@@ -16,7 +16,6 @@ import Roadmap from '../components/Roadmap';
 import Hero from '../components/Hero';
 import Partners from '../components/Partners';
 import { Slider } from '../components/Slider';
-import Footer from '../components/Footer';
 import Head from 'next/head';
 import OurCourses from '../components/OurCourses';
 
@@ -104,7 +103,6 @@ export default function Home() {
         {/* <OurCourses /> */}
         <Partners />
         <Slider />
-        <Footer />
       </div>
     </>
   );
