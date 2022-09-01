@@ -7,6 +7,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TelegramIcon from '@material-ui/icons/Telegram';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import { useCurrentWidth } from "../src/hooks/getWidth";
+import styles from '../styles/Home.module.css';
 
 const OurTeam = () => {
   const currentWidth = useCurrentWidth();
@@ -18,6 +19,7 @@ const OurTeam = () => {
       justifyContent="center"
       alignItems="center"
       spacing={0}
+      className={styles.container}
     >
       <Grid item md={12}>
         <Typography component="div">

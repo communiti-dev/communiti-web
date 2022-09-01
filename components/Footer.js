@@ -14,7 +14,7 @@ import LinkedinIcon from '../assets/linkedIn.svg.webp'
 const Footer = () => {
   return (
     <Grid container direction='row' justifyContent='center' alignItems='center'
-     spacing={0} sx={{background: '#000', minHeight: '250px', marginTop: '5rem'}} >
+     spacing={0} sx={{background: '#000', minHeight: '250px'}} >
          <Grid container item xs={12} sm={12} md={10} direction='row' justifyContent='center' alignItems='center'>
              <Grid item xs={12} sm={12} md={3} className="center-sm">
                 <Heading fontWeight="900" fontSize="32px" lineHeight="40px" color="#fff" margin="4px auto" fontSizeMobile="24px">
