@@ -7,7 +7,7 @@ export const ourTeam = [
         location: 'India',
         linkedin: 'https://www.linkedin.com/in/krishna-sharma-881152120/',
         twitter: 'https://twitter.com/0xkrishnaa',
-        telegram: 'https://t.me/@KrishnaSharma7860'
+        telegram: 'https://t.me/KrishnaSharma7860'
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ export const ourTeam = [
         location: 'India',
         linkedin: 'https://www.linkedin.com/in/codersadhu/',
         twitter: 'https://twitter.com/blockc_school',
-        telegram: 'https://t.me/@codersadhu'
+        telegram: 'https://t.me/codersadhu'
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ export const ourTeam = [
         location: 'India',
         linkedin: 'https://www.linkedin.com/in/suyash-mishra00/',
         twitter: 'https://twitter.com/SuyashM43928353',
-        telegram: 'https://t.me/@suyash_mishra_02'
+        telegram: 'https://t.me/suyash_mishra_02'
     },
     {
         id: 5,
@@ -47,7 +47,7 @@ export const ourTeam = [
         location: 'India',
         linkedin: 'https://www.linkedin.com/in/ashish-kumar-pal-2a6954188/',
         twitter: 'https://twitter.com/coderrmann',
-        telegram: 'https://t.me/@coderrman'
+        telegram: 'https://t.me/coderrman'
     },
     {
         id: 7,
@@ -55,7 +55,7 @@ export const ourTeam = [
         designation: 'Software Engineer',
         src: 'https://media-exp1.licdn.com/dms/image/C4D03AQE2uoYIvJQipg/profile-displayphoto-shrink_400_400/0/1657292303379?e=1667433600&v=beta&t=ezR4nO-UQLhuZ1moJtyUFlVeVX_YOTpRbSs5mHtDdd4',
         location: 'India',
-        linkedin: 'https://www.linkedin.com/in/codersadhu/',
+        linkedin: 'https://www.linkedin.com/in/kapishsingh33/',
         twitter: 'https://twitter.com/Kapishsingh8',
         telegram: 'https://t.me/kapish33'
     },

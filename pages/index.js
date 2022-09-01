@@ -18,10 +18,11 @@ import Partners from '../components/Partners';
 import { Slider } from '../components/Slider';
 import Head from 'next/head';
 import OurCourses from '../components/OurCourses';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
-    <>
+    <div className={styles.container}>
       <div>
         <Head>
           <title>Communiti | Learn & Build</title>
@@ -104,6 +105,6 @@ export default function Home() {
         <Partners />
         <Slider />
       </div>
-    </>
+    </div>
   );
 }
