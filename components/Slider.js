@@ -8,16 +8,27 @@ export const Slider = () => {
     {
       id: 1,
       image:
-        'https://media-exp1.licdn.com/dms/image/C5603AQHXj11G1gbPRw/profile-displayphoto-shrink_400_400/0/1624866347967?e=1665619200&v=beta&t=7TL758HN7Wr9ovzBi2EmavjUP7Me-s__auPjZHz4pC0',
+        'https://media-exp1.licdn.com/dms/image/C5603AQGP4Y0k5oUCwg/profile-displayphoto-shrink_100_100/0/1620297582544?e=1675296000&v=beta&t=jsF0reAFAyz4_1-EAeWQMBxvpsdqYaSY_TjMSAhJvVE',
+      name: 'Rohan Ranjan',
+      title: 'Blockchain Engineer',
+      packagee: '41 LPA',
+      quote:
+        "I feel privileged to recommend 'communiti' to anyone who wants to enter web3 without any prior knowledge. The career support at 'communiti' has always been there when I needed help on a last minute cram session for an interview or if I needed someone to talk to about the job search. 'communiti' has played a huge part in my life, and I couldn't be more thankful!",
+    },
+    {
+      id: 1,
+      image:
+        'https://media-exp1.licdn.com/dms/image/C5603AQHXj11G1gbPRw/profile-displayphoto-shrink_100_100/0/1624866347967?e=1675296000&v=beta&t=0RvXMu_-V2Rb33-LeGcYLHBrCevlUlNOZGOjVb5S2Yw',
       name: 'Shubham Rathod',
       title: 'Blockchain Engineer',
+      packagee: '15 LPA',
       quote:
         "I feel privileged to recommend 'communiti' to anyone who wants to enter web3 without any prior knowledge. Thanks to them I was able to scale exponentially not only in skills also land a web3 job in just few months.",
     },
     {
       id: 2,
       image:
-        'https://media-exp1.licdn.com/dms/image/C4E03AQH-W-F1_KBiHQ/profile-displayphoto-shrink_400_400/0/1628682264014?e=1665619200&v=beta&t=rV53WXMpR3v7bnHWBsNa3Tiw0MLC84t6pM-B77tL4EQ',
+        'https://media-exp1.licdn.com/dms/image/C4E03AQH-W-F1_KBiHQ/profile-displayphoto-shrink_100_100/0/1628682264014?e=1675296000&v=beta&t=B1G0Gp52zOT48ccUM0kqAwyJfjrXXAw5yUVa1ITn4W8',
       name: 'Suman Chakraborty',
       title: 'Blockchain Developer',
       quote:
@@ -26,9 +37,10 @@ export const Slider = () => {
     {
       id: 3,
       image:
-        'https://media-exp1.licdn.com/dms/image/C5603AQH1Htz4chj1uQ/profile-displayphoto-shrink_400_400/0/1632641203417?e=1665619200&v=beta&t=8TGaUon_ClgZOzywnA8c46qwol5vBHxgdtF3ZzIp3Vo',
+        'https://media-exp1.licdn.com/dms/image/C5603AQH1Htz4chj1uQ/profile-displayphoto-shrink_100_100/0/1632641203417?e=1675296000&v=beta&t=12K3wM2Ejti1P4lql-ZtBnLiAMG2YIkktuKtRPGO_gU',
       name: 'Anil Pujari',
       title: 'Full-stack Blockchain',
+      packagee: '15 LPA',
       quote:
         "Transition from Software Developer to BlockChain Engineer is not that easy as it's sounds. 'communiti' helps me make it easy with it's relevant curriculum and learning journey.",
     },
@@ -76,7 +88,7 @@ export const Slider = () => {
         </div>
         <div className="section-center">
           {people.map((person, personIndex) => {
-            const { id, image, name, title, quote } = person;
+            const { id, image, name, title, quote, packagee } = person;
             let position = 'nextSlide';
             if (personIndex === index) {
               position = 'activeSlide';
@@ -99,6 +111,7 @@ export const Slider = () => {
                   />
                 )}
                 <h4>{name}</h4>
+                {packagee && <p className="package">Package: {packagee}</p>}
                 <p className="title-slider">{title}</p>
                 <p className="text">{quote}</p>
                 <FaQuoteRight className="icon" />
