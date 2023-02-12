@@ -32,15 +32,27 @@ export default function Home() {
           />
         </Head>
         <Hero />
+        <div className={styles.event}>
+          <iframe
+            src="https://lu.ma/embed-checkout/evt-81LsHD1X9zssMJu"
+            width="600"
+            height="450"
+            frameborder="0"
+            style={{ border: "1px solid #bfcbda88", borderRadius: "4px" }}
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
         <Container maxWidth="lg">
           <Box>
             <ResponsiveFLexBox
-              flexDirection={'row'}
+              flexDirection={"row"}
               flexDirectionMobile="column"
-              justifyContent={'space-around'}
+              justifyContent={"space-around"}
               alignItemsMobile="center"
-              alignItems={'center'}
-              borderRadius={'33px'}
+              alignItems={"center"}
+              borderRadius={"33px"}
             >
               <ResponsiveBox textAlignMobile="center">
                 <Image src={Features} alt="feature" />
@@ -66,10 +78,10 @@ export default function Home() {
                   fontWeight="500"
                   margin="30px 0"
                 >
-                  First time in industry a curated{' '}
-                  <Bolder color="#4D4D4D"> fulltime curriculum </Bolder> with{' '}
-                  <Bolder color="#4D4D4D"> Live Classes, </Bolder> One on One{' '}
-                  <Bolder color="#4D4D4D"> Mentorship, Bounties, </Bolder>{' '}
+                  First time in industry a curated{" "}
+                  <Bolder color="#4D4D4D"> fulltime curriculum </Bolder> with{" "}
+                  <Bolder color="#4D4D4D"> Live Classes, </Bolder> One on One{" "}
+                  <Bolder color="#4D4D4D"> Mentorship, Bounties, </Bolder>{" "}
                   Hackathons and
                   <Bolder color="#4D4D4D"> Guaranteed Job Assistance </Bolder>
                 </Paragraph>
@@ -88,8 +100,8 @@ export default function Home() {
                     margin="18px 0"
                     onClick={() =>
                       window.open(
-                        'https://vzloajhw7wb.typeform.com/to/xLz2rsVp',
-                        '_blank'
+                        "https://vzloajhw7wb.typeform.com/to/xLz2rsVp",
+                        "_blank"
                       )
                     }
                   >
