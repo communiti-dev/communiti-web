@@ -28,9 +28,9 @@ const OurTeam = () => {
           </Box>
         </Typography>
       </Grid>
-      {!isIpadPro && <Grid item sm={12} md={1} />}
+      {!isIpadPro && <Grid item sm={12} md={0} />}
         {ourTeam.map((item) => (
-          <Grid item key={item.id} md={isIpadPro ? 3 : 2} sx={{marginBottom: '2rem !important', textAlign: 'center', width: '100%'}}>
+          <Grid item key={item.id} md={isIpadPro ? 3 : 3} sx={{marginBottom: '2rem !important', textAlign: 'center', width: '100%'}}>
             <img
               src={item.src}
               alt={item.name}
