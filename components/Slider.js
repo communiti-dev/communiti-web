@@ -101,7 +101,7 @@ export const Slider = () => {
             }
             return (
               <article className={position} key={id}>
-                {image && (
+                {/* {image && (
                   <Image
                     src={image}
                     alt={name}
@@ -109,7 +109,7 @@ export const Slider = () => {
                     width={'150px'}
                     className="person-img"
                   />
-                )}
+                )} */}
                 <h4>{name}</h4>
                 {packagee && <p className="package">Package: {packagee}</p>}
                 <p className="title-slider">{title}</p>

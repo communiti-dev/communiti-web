@@ -22,8 +22,11 @@ const Header = () => {
         fontSizeMobile="13px"
         paddingMobile=".6rem 1rem"
       >
-        🚀 Our Batch will start from 21<sup>st</sup> september 2022 &lt;&gt; learn
-        @ zero cost
+        <a href="https://lu.ma/solanaxcommuniti" target="_blank">
+          {" "}
+          🚀 Solana Unlocked @ 21st Feb Register Now
+        </a>{" "}
+         | New Website Under Maintainance
       </Paragraph>
       <Container maxWidth="xl">
         <Grid
@@ -33,37 +36,39 @@ const Header = () => {
           alignItems="center"
           spacing={0}
         >
-            <Grid item xs={4} sm={3} md={3}>
-              <Link href="/">
-                <Image className="cursor-pointer" loading="lazy" src={Community} width={isMobileView ? "150px" : "210px"} alt="communiti" />
-              </Link>
-            </Grid>
-            <Grid item xs={1} sm={3} md={4}></Grid>
-            <Grid item xs={2} sm={2} md={2} className="text-ul">
-              <Link href="/faq">
-                  FAQs
-              </Link>
-            </Grid>
-            <Grid item xs={3} sm={2} md={1} className="text-ul">
-              <Link href="/team">
-                Our Team
-              </Link>
-            </Grid>
-            <Grid item xs={0} sm={0} md={1}></Grid>
-            <Grid item xs={2} sm={2} md={1}>
-              <Anchor
-                color="white"
-                height="42px"
-                backgroundColor="#3E57FE"
-                padding={isMobileView ? "8px" : "12px 18px"}
-                borderRadius="8px"
-                fontSize={isMobileView ? "14px" : ''}
-                href="https://www.notion.so/Blockchain-Course-3b89152dd1c04a3396207cf5c88803c4"
-                target="_blank"
-              >
-                Courses
-              </Anchor>
-            </Grid>
+          <Grid item xs={4} sm={3} md={3}>
+            <Link href="/">
+              <Image
+                className="cursor-pointer"
+                loading="lazy"
+                src={Community}
+                width={isMobileView ? "150px" : "210px"}
+                alt="communiti"
+              />
+            </Link>
+          </Grid>
+          <Grid item xs={1} sm={3} md={4}></Grid>
+          <Grid item xs={2} sm={2} md={2} className="text-ul">
+            <Link href="/faq">FAQs</Link>
+          </Grid>
+          <Grid item xs={3} sm={2} md={1} className="text-ul">
+            <Link href="/team">Our Team</Link>
+          </Grid>
+          <Grid item xs={0} sm={0} md={1}></Grid>
+          <Grid item xs={2} sm={2} md={1}>
+            <Anchor
+              color="white"
+              height="42px"
+              backgroundColor="#3E57FE"
+              padding={isMobileView ? "8px" : "12px 18px"}
+              borderRadius="8px"
+              fontSize={isMobileView ? "14px" : ""}
+              href="https://www.notion.so/Blockchain-Course-3b89152dd1c04a3396207cf5c88803c4"
+              target="_blank"
+            >
+              Courses
+            </Anchor>
+          </Grid>
         </Grid>
       </Container>
     </>
