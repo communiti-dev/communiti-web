@@ -32,18 +32,6 @@ export default function Home() {
           />
         </Head>
         <Hero />
-        <div className={styles.event}>
-          <iframe
-            src="https://lu.ma/embed-checkout/evt-81LsHD1X9zssMJu"
-            width="600"
-            height="450"
-            frameborder="0"
-            style={{ border: "1px solid #bfcbda88", borderRadius: "4px" }}
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe>
-        </div>
         <Container maxWidth="lg">
           <Box>
             <ResponsiveFLexBox
@@ -100,7 +88,7 @@ export default function Home() {
                     margin="18px 0"
                     onClick={() =>
                       window.open(
-                        "https://vzloajhw7wb.typeform.com/to/xLz2rsVp",
+                        "https://build.communiti.dev/store/Solana-Bootcamp-7c0mmeuaxy0e",
                         "_blank"
                       )
                     }

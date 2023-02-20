@@ -1,11 +1,15 @@
 import Link from "next/link";
-import { Container, Grid } from "@mui/material";
+import { Button, Container, Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import Image from "next/image";
 
 import Community from "../../assets/communiti.svg";
 import { Anchor, Paragraph } from "../common/global";
 import { useCurrentWidth } from "../../src/hooks/getWidth";
+<script
+  id="luma-checkout"
+  src="https://embed.lu.ma/checkout-button.js"
+></script>;
 
 const Header = () => {
   const isMobileView = useCurrentWidth() <= 768 ? true : false;
@@ -22,11 +26,22 @@ const Header = () => {
         fontSizeMobile="13px"
         paddingMobile=".6rem 1rem"
       >
-        <a href="https://lu.ma/solanaxcommuniti" target="_blank">
-          {" "}
-          🚀 Solana Unlocked @ 21st Feb Register Now
-        </a>{" "}
-         | New Website Under Maintainance
+        🚀 Solana Batch starts from 5th March &nbsp;
+        <a
+          href="https://build.communiti.dev/store/Solana-Bootcamp-7c0mmeuaxy0e"
+          target="_blank"
+          className="highlight"
+        >
+          Apply Now &nbsp;
+        </a>
+        | &nbsp; Solana Unlocked @ 21st Feb &nbsp;
+        <a
+          href="https://lu.ma/event/evt-81LsHD1X9zssMJu"
+          target="_blank"
+          className="highlight"
+        >
+          Register for Event
+        </a>
       </Paragraph>
       <Container maxWidth="xl">
         <Grid
@@ -36,7 +51,7 @@ const Header = () => {
           alignItems="center"
           spacing={0}
         >
-          <Grid item xs={4} sm={3} md={3}>
+          <Grid item xs={4} sm={3} md={2}>
             <Link href="/">
               <Image
                 className="cursor-pointer"
@@ -51,6 +66,7 @@ const Header = () => {
           <Grid item xs={2} sm={2} md={2} className="text-ul">
             <Link href="/faq">FAQs</Link>
           </Grid>
+
           <Grid item xs={3} sm={2} md={1} className="text-ul">
             <Link href="/team">Our Team</Link>
           </Grid>
