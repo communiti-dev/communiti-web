@@ -2,10 +2,11 @@
 
 export const HomeHeroDecription = {
   left: {
-    HeroHeading: 'We have build amazing Courses for Rockstars 🚀',
+    HeroHeading: "We have build amazing Courses for Rockstars 🚀",
     HeroButton: {
-      ButtonText: 'Apply here →',
-      ButtonLink: 'https://discord.gg/XWQWQWQ',
+      ButtonText: "Apply here →",
+      ButtonLink:
+        "https://build.communiti.dev/store/Solana-Bootcamp-7c0mmeuaxy0e",
     },
   },
 };
