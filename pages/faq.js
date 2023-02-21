@@ -34,7 +34,6 @@ export default function CustomizedAccordions() {
   };
 
   const AccordionSummary = styled((props) => {
-
     return (
       <MuiAccordionSummary
         expandIcon={
@@ -65,12 +64,12 @@ export default function CustomizedAccordions() {
     >
       <Grid item md={12}>
         <Typography component="div">
-          <Box fontSize={60} fontWeight={600} textAlign="center" my={6}>
+          <Box fontSize={60} fontWeight={600} textAlign="center" my={6} mt={14}>
             FAQ's
           </Box>
         </Typography>
       </Grid>
-      <Grid item md={8} sx={{margin: "0 20px"}}>
+      <Grid item md={8} sx={{ margin: "0 20px" }}>
         {faqsData.map((item) => (
           <Accordion
             className="faq-accordion"

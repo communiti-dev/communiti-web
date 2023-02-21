@@ -4,7 +4,7 @@ import { Box } from "@mui/system";
 import Image from "next/image";
 
 import Community from "../../assets/communiti.svg";
-import { Anchor, Paragraph } from "../common/global";
+import { Anchor, AnchorLink, Paragraph } from "../common/global";
 import { useCurrentWidth } from "../../src/hooks/getWidth";
 <script
   id="luma-checkout"
@@ -53,9 +53,9 @@ const Header = () => {
           spacing={0}
           sx={{
             position: "fixed",
-            top: "37px",
+            top: location.pathname === "/courses" ? "37px" : "33px",
             zIndex: "10",
-            background: "#fff",
+            background: location.pathname === "/courses" ? "#fff" : "",
           }}
         >
           <Grid item xs={4} sm={3} md={2}>
@@ -75,22 +75,24 @@ const Header = () => {
           </Grid>
 
           <Grid item xs={3} sm={2} md={1} className="text-ul">
-            <Link href="/team">Our Team</Link>
+            <Link style={{ color: "red !important" }} href="/team">
+              Our Team
+            </Link>
           </Grid>
           <Grid item xs={0} sm={0} md={1}></Grid>
           <Grid item xs={2} sm={2} md={1}>
-            <Anchor
-              color="white"
-              height="42px"
-              backgroundColor="#3E57FE"
-              padding={isMobileView ? "8px" : "12px 18px"}
-              borderRadius="8px"
-              fontSize={isMobileView ? "14px" : ""}
-              href="https://www.notion.so/Blockchain-Course-3b89152dd1c04a3396207cf5c88803c4"
-              target="_blank"
-            >
-              Courses
-            </Anchor>
+            <Link href="/courses">
+              <AnchorLink
+                color="white"
+                height="42px"
+                backgroundColor="#3E57FE"
+                padding={isMobileView ? "8px" : "12px 18px"}
+                borderRadius="8px"
+                fontSize={isMobileView ? "14px" : ""}
+              >
+                Courses
+              </AnchorLink>
+            </Link>
           </Grid>
         </Grid>
       </Container>
