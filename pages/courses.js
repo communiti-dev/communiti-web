@@ -120,7 +120,7 @@ export default function Courses() {
                 16 Weeks
               </Typography>
             </Grid>
-            <Grid item md={3}></Grid>
+            <Grid item xs={2} md={3}></Grid>
             <Grid item md={3}>
               <Typography
                 variant="button"
