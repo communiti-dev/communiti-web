@@ -25,6 +25,7 @@ const Header = () => {
         textAlign="center"
         fontSizeMobile="13px"
         paddingMobile=".6rem 1rem"
+        style={{ position: "fixed", top: "0px", width: "100%", zIndex: "10" }}
       >
         🚀 Solana Batch starts from 5th March &nbsp;
         <a
@@ -50,6 +51,12 @@ const Header = () => {
           justifyContent="center"
           alignItems="center"
           spacing={0}
+          sx={{
+            position: "fixed",
+            top: "37px",
+            zIndex: "10",
+            background: "#fff",
+          }}
         >
           <Grid item xs={4} sm={3} md={2}>
             <Link href="/">
