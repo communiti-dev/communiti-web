@@ -53,9 +53,9 @@ const Header = () => {
           spacing={0}
           sx={{
             position: "fixed",
-            top: location.pathname === "/courses" ? "37px" : "33px",
+            top: window.location.pathname === "/courses" ? "37px" : "33px",
             zIndex: "10",
-            background: location.pathname === "/courses" ? "#fff" : "",
+            background: window.location.pathname === "/courses" ? "#fff" : "",
           }}
         >
           <Grid item xs={4} sm={3} md={2}>
