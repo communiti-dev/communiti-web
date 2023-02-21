@@ -4,7 +4,7 @@ import { Box } from "@mui/system";
 import Image from "next/image";
 
 import Community from "../../assets/communiti.svg";
-import { Anchor, Paragraph } from "../common/global";
+import { Anchor, AnchorLink, Paragraph } from "../common/global";
 import { useCurrentWidth } from "../../src/hooks/getWidth";
 <script
   id="luma-checkout"
@@ -25,6 +25,7 @@ const Header = () => {
         textAlign="center"
         fontSizeMobile="13px"
         paddingMobile=".6rem 1rem"
+        style={{ position: "fixed", top: "0px", width: "100%", zIndex: "10" }}
       >
         🚀 Solana Batch starts from 5th March &nbsp;
         <a
@@ -50,6 +51,24 @@ const Header = () => {
           justifyContent="center"
           alignItems="center"
           spacing={0}
+          sx={{
+            position: "fixed",
+            top:
+              typeof window !== "undefined" &&
+              window?.location?.pathname === "/courses"
+                ? isMobileView
+                  ? "58px"
+                  : "37px"
+                : isMobileView
+                ? "50px"
+                : "35px",
+            zIndex: "10",
+            background:
+              typeof window !== "undefined" &&
+              window?.location?.pathname === "/courses"
+                ? "#fff"
+                : "",
+          }}
         >
           <Grid item xs={4} sm={3} md={2}>
             <Link href="/">
@@ -67,23 +86,25 @@ const Header = () => {
             <Link href="/faq">FAQs</Link>
           </Grid>
 
-          <Grid item xs={3} sm={2} md={1} className="text-ul">
-            <Link href="/team">Our Team</Link>
+          <Grid item xs={2} sm={2} md={1} className="text-ul">
+            <Link style={{ color: "red !important" }} href="/team">
+              Our Team
+            </Link>
           </Grid>
           <Grid item xs={0} sm={0} md={1}></Grid>
-          <Grid item xs={2} sm={2} md={1}>
-            <Anchor
-              color="white"
-              height="42px"
-              backgroundColor="#3E57FE"
-              padding={isMobileView ? "8px" : "12px 18px"}
-              borderRadius="8px"
-              fontSize={isMobileView ? "14px" : ""}
-              href="https://www.notion.so/Blockchain-Course-3b89152dd1c04a3396207cf5c88803c4"
-              target="_blank"
-            >
-              Courses
-            </Anchor>
+          <Grid item xs={3} sm={2} md={1}>
+            <Link href="/courses">
+              <AnchorLink
+                color="white"
+                height="42px"
+                backgroundColor="#3E57FE"
+                padding={isMobileView ? "8px" : "12px 18px"}
+                borderRadius="8px"
+                fontSize={isMobileView ? "14px" : ""}
+              >
+                Courses
+              </AnchorLink>
+            </Link>
           </Grid>
         </Grid>
       </Container>

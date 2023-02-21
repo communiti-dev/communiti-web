@@ -15,7 +15,12 @@ const Footer = () => {
       justifyContent="center"
       alignItems="center"
       spacing={0}
-      sx={{ background: "#000", minHeight: "250px" }}
+      sx={{
+        background: "#000",
+        minHeight: "250px",
+        zIndex: "1200",
+        position: "relative",
+      }}
     >
       <Grid
         container
@@ -129,4 +134,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

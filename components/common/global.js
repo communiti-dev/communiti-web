@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-const breakPoint = '768px';
-const fontFamily = 'Gilroy';
+import styled from "styled-components";
+const breakPoint = "768px";
+const fontFamily = "Gilroy";
 export const Anchor = styled.a`
   text-decoration: none;
   margin-right: ${(props) => props.marginRight};
@@ -10,6 +10,20 @@ export const Anchor = styled.a`
   font-size: ${(props) => props.fontSize};
   color: ${(props) => props.color};
   background-color: ${(props) => props.backgroundColor};
+  font-family: ${fontFamily};
+  border: ${(props) => props.border};
+  border-radius: ${(props) => props.borderRadius};
+  height: ${(props) => props.height};
+`;
+export const AnchorLink = styled.span`
+  text-decoration: none;
+  margin-right: ${(props) => props.marginRight};
+  cursor: pointer;
+  margin: ${(props) => props.margin};
+  padding: ${(props) => props.padding};
+  font-size: ${(props) => props.fontSize};
+  color: ${(props) => props.color};
+  background-color: ${(props) => props.backgroundColor} !important;
   font-family: ${fontFamily};
   border: ${(props) => props.border};
   border-radius: ${(props) => props.borderRadius};
@@ -42,7 +56,7 @@ export const ResponsiveBox = styled.div`
   padding: ${(props) => props.padding};
   margin: ${(props) => props.margin};
   background-color: ${(props) => props.backgroundColor};
-  position: ${(props) => (!props.position ? 'relative' : props.position)};
+  position: ${(props) => (!props.position ? "relative" : props.position)};
   left: ${(props) => props.left};
   right: ${(props) => props.right};
   top: ${(props) => props.top};
@@ -108,7 +122,7 @@ export const Paragraph = styled.p`
   }
 `;
 export const CustumButton = styled.button`
-  border: ${(props) => (!props.border ? '0px' : props.border)};
+  border: ${(props) => (!props.border ? "0px" : props.border)};
   font-family: ${(props) =>
     !props.fontFamily ? fontFamily : props.fontFamily};
   font-size: ${(props) => props.fontSize};
@@ -175,7 +189,7 @@ export const Grid = styled.div`
 `;
 export const MasetrBox = styled.div`
   height: ${(props) => props.height};
-  position: ${(props) => (!props.position ? 'relative' : props.position)};
+  position: ${(props) => (!props.position ? "relative" : props.position)};
   border-right: ${(props) => props.borderRight};
   border-left: ${(props) => props.borderLeft};
   border-top: ${(props) => props.borderTop};
@@ -189,7 +203,7 @@ export const MasetrBox = styled.div`
   width: ${(props) => props.width};
   @media (max-width: 770px) {
     width: ${(props) => props.smWidth};
-    margin-right: ${(props) => props.smMarginRight};;
+    margin-right: ${(props) => props.smMarginRight};
   }
 `;
 export const Circle = styled.span`

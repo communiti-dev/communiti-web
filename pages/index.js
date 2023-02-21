@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import Features from '../assets/feature.svg';
-import { Box } from '@mui/material';
+import Image from "next/image";
+import Features from "../assets/feature.svg";
+import { Box } from "@mui/material";
 import {
   Heading,
   ResponsiveBox,
@@ -9,16 +9,16 @@ import {
   CustumButton,
   CenterAlongX,
   Bolder,
-} from '../components/common/global';
-import { HomeHeroDecription } from '../src/utils/constant';
-import { Container } from '@mui/system';
-import Roadmap from '../components/Roadmap';
-import Hero from '../components/Hero';
-import Partners from '../components/Partners';
-import { Slider } from '../components/Slider';
-import Head from 'next/head';
-import OurCourses from '../components/OurCourses';
-import styles from '../styles/Home.module.css';
+} from "../components/common/global";
+import { HomeHeroDecription } from "../src/utils/constant";
+import { Container } from "@mui/system";
+import Roadmap from "../components/Roadmap";
+import Hero from "../components/Hero";
+import Partners from "../components/Partners";
+import { Slider } from "../components/Slider";
+import Head from "next/head";
+import OurCourses from "../components/OurCourses";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (

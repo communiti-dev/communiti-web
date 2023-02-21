@@ -3,15 +3,15 @@ import { Box } from "@mui/system";
 import Image from "next/image";
 import React from "react";
 import { ourTeam } from "../src/data/team";
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import TelegramIcon from '@material-ui/icons/Telegram';
-import TwitterIcon from '@material-ui/icons/Twitter';
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import TelegramIcon from "@material-ui/icons/Telegram";
+import TwitterIcon from "@material-ui/icons/Twitter";
 import { useCurrentWidth } from "../src/hooks/getWidth";
-import styles from '../styles/Home.module.css';
+import styles from "../styles/Home.module.css";
 
 const OurTeam = () => {
   const currentWidth = useCurrentWidth();
-  const isIpadPro = (currentWidth > 768 && currentWidth <= 1024) ? true : false;
+  const isIpadPro = currentWidth > 768 && currentWidth <= 1024 ? true : false;
   return (
     <Grid
       container
@@ -23,34 +23,46 @@ const OurTeam = () => {
     >
       <Grid item md={12}>
         <Typography component="div">
-          <Box fontSize={40} fontWeight={600} textAlign="center" my={6} mb={8}>
+          <Box
+            fontSize={40}
+            fontWeight={600}
+            textAlign="center"
+            my={6}
+            mb={8}
+            mt={14}
+          >
             Meet Our Team
           </Box>
         </Typography>
       </Grid>
       {!isIpadPro && <Grid item sm={12} md={0} />}
-        {ourTeam.map((item) => (
-          <Grid item key={item.id} md={isIpadPro ? 3 : 3} sx={{marginBottom: '2rem !important', textAlign: 'center', width: '100%'}}>
-            <img
-              src={item.src}
-              alt={item.name}
-              className="faq-person-img"
-            />
-            <h4 className="faq-person-name">{item.name}</h4>
-            <p className="faq-person-deg">{item.designation}</p>
-            <p>
-              <a href={item.linkedin} target="_blank">
-                <LinkedInIcon />
-              </a>
-              <a className="mx-2" href={item.telegram} target="_blank">
-                <TelegramIcon />
-              </a>
-              <a href={item.twitter} target="_blank">
-                <TwitterIcon />
-              </a>
-            </p>
-          </Grid>
-        ))}
+      {ourTeam.map((item) => (
+        <Grid
+          item
+          key={item.id}
+          md={isIpadPro ? 3 : 3}
+          sx={{
+            marginBottom: "2rem !important",
+            textAlign: "center",
+            width: "100%",
+          }}
+        >
+          <img src={item.src} alt={item.name} className="faq-person-img" />
+          <h4 className="faq-person-name">{item.name}</h4>
+          <p className="faq-person-deg">{item.designation}</p>
+          <p>
+            <a href={item.linkedin} target="_blank">
+              <LinkedInIcon />
+            </a>
+            <a className="mx-2" href={item.telegram} target="_blank">
+              <TelegramIcon />
+            </a>
+            <a href={item.twitter} target="_blank">
+              <TwitterIcon />
+            </a>
+          </p>
+        </Grid>
+      ))}
     </Grid>
   );
 };
