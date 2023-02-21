@@ -56,7 +56,11 @@ const Header = () => {
             top:
               typeof window !== "undefined" &&
               window?.location?.pathname === "/courses"
-                ? "37px"
+                ? isMobileView
+                  ? "58px"
+                  : "37px"
+                : isMobileView
+                ? "50px"
                 : "35px",
             zIndex: "10",
             background:
@@ -82,13 +86,13 @@ const Header = () => {
             <Link href="/faq">FAQs</Link>
           </Grid>
 
-          <Grid item xs={3} sm={2} md={1} className="text-ul">
+          <Grid item xs={2} sm={2} md={1} className="text-ul">
             <Link style={{ color: "red !important" }} href="/team">
               Our Team
             </Link>
           </Grid>
           <Grid item xs={0} sm={0} md={1}></Grid>
-          <Grid item xs={2} sm={2} md={1}>
+          <Grid item xs={3} sm={2} md={1}>
             <Link href="/courses">
               <AnchorLink
                 color="white"
