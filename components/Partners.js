@@ -5,6 +5,8 @@ import SolanaLogo from "../assets/solana-logo.svg";
 import QuillAuditsLogo from "../assets/quillaudits.jpeg";
 import SkullfullLogo from "../assets/skullfull.jpeg";
 import CodemonkLogo from "../assets/codemonk.png";
+import Truts from "../assets/truts.svg";
+import Lumos from "../assets/lumos.png";
 import Image from "next/image";
 import { Grid } from "@mui/material";
 
@@ -59,7 +61,7 @@ const Partners = () => {
           item
           xs={8}
           sm={8}
-          md={5}
+          md={3}
           direction="row"
           justifyContent="center"
           alignItems="center"
@@ -77,7 +79,7 @@ const Partners = () => {
           item
           xs={8}
           sm={8}
-          md={5}
+          md={3}
           direction="row"
           justifyContent="center"
           alignItems="center"
@@ -101,7 +103,7 @@ const Partners = () => {
           item
           xs={8}
           sm={8}
-          md={5}
+          md={3}
           direction="row"
           justifyContent="center"
           alignItems="center"
@@ -126,7 +128,7 @@ const Partners = () => {
           item
           xs={8}
           sm={8}
-          md={5}
+          md={3}
           direction="row"
           justifyContent="center"
           alignItems="center"
@@ -145,6 +147,46 @@ const Partners = () => {
             height="60px"
             width="190px"
           />
+        </Grid>
+        <Grid
+          container
+          item
+          xs={8}
+          sm={8}
+          md={3}
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          sx={{
+            background: "#F7F7F7",
+            borderRadius: "8px",
+            margin: ".6rem 0",
+            marginBottom: "1rem",
+            marginRight: "1rem",
+            padding: "5px",
+          }}
+        >
+          <Image src={Truts} alt="Truts logo" height="60px" width="190px" />
+        </Grid>
+        <Grid
+          container
+          item
+          xs={8}
+          sm={8}
+          md={3}
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          sx={{
+            background: "#F7F7F7",
+            borderRadius: "8px",
+            margin: ".6rem 0",
+            marginBottom: "1rem",
+            marginRight: "1rem",
+            padding: "5px",
+          }}
+        >
+          <Image src={Lumos} alt="Lumos logo" height="60px" width="190px" />
         </Grid>
       </Grid>
     </Grid>
