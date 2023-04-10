@@ -12,7 +12,7 @@ export const ourTeam = [
   {
     id: 2,
     name: "Deepanshu Prajapti",
-    designation: "CEO & Technical Mentor",
+    designation: "CEO & ETHGlobal Mentor",
     src: "https://res.cloudinary.com/dufj1pdmy/image/upload/v1675834113/communiti/1634797895299_hsvtoo.jpg",
     location: "India",
     linkedin: "https://www.linkedin.com/in/codersadhu/",
@@ -45,9 +45,9 @@ export const ourTeam = [
     designation: "Community Manager",
     src: "https://res.cloudinary.com/dufj1pdmy/image/upload/v1676036212/communiti/akash_p5gzdv.jpg",
     location: "India",
-    linkedin: "https://www.linkedin.com/in/ankitamishra14",
-    twitter: "https://twitter.com/ashiankita",
-    telegram: "https://t.me/+jHDcjX55zWw5NzNl",
+    linkedin: "https://www.linkedin.com/in/prazapati/",
+    twitter: "https://twitter.com/prazapatizi",
+    telegram: "https://t.me/Hiraeth_Love",
   },
   {
     id: 5,

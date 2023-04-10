@@ -19,6 +19,7 @@ import { Slider } from "../components/Slider";
 import Head from "next/head";
 import OurCourses from "../components/OurCourses";
 import styles from "../styles/Home.module.css";
+import Hackathon from "../components/Hackathon";
 
 export default function Home() {
   return (
@@ -103,6 +104,7 @@ export default function Home() {
         </Container>
         {/* <OurCourses /> */}
         <Partners />
+        <Hackathon/>
         <Slider />
       </div>
     </div>
